@@ -107,7 +107,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Editor\AvalonEditCompletionData.cs" />
-    <Compile Include="Editor\AvalonEditText.cs" />
     <Compile Include="Editor\AvalonEditTextContainer.cs" />
     <Compile Include="Editor\CodeTextEditor.cs" />
     <Compile Include="Editor\CompletionResult.cs" />
