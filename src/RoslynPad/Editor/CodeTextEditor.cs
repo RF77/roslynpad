@@ -98,6 +98,7 @@ namespace RoslynPad.Editor
             // ReSharper disable once UnusedVariable
             var task = ShowCompletion(controlSpace: false);
         }
+        public const string PreText = "string myString = \"TestString\";";
 
         private async Task ShowCompletion(bool controlSpace)
         {
@@ -111,7 +112,7 @@ namespace RoslynPad.Editor
                 int offset;
                 GetCompletionDocument(out offset);
                 var completionChar = controlSpace ? (char?)null : Document.GetCharAt(offset - 1);
-                var results = await CompletionProvider.GetCompletionData(offset, completionChar).ConfigureAwait(true);
+                var results = await CompletionProvider.GetCompletionData(offset + PreText.Length, completionChar).ConfigureAwait(true);
                 if (_insightWindow == null && results.OverloadProvider != null)
                 {
                     _insightWindow = new OverloadInsightWindow(TextArea)

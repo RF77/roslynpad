@@ -27,9 +27,11 @@ namespace RoslynPad.Editor
             _editor.Document.Changed += DocumentOnChanged;
         }
 
+        public const string PreText = "string myString = \"TestString\";";
+
         private void SetCurrent()
         {
-            _current = SourceText.From(_editor.Text);
+            _current = SourceText.From(PreText + _editor.Text);
         }
 
         private void DocumentOnChanging(object sender, DocumentChangeEventArgs e)
@@ -42,7 +44,7 @@ namespace RoslynPad.Editor
             SetCurrent();
 
             var textChangeRange = new TextChangeRange(
-                new TextSpan(e.Offset, e.RemovalLength),
+                new TextSpan(e.Offset + PreText.Length, e.RemovalLength),
                 e.RemovalLength == 0 ? e.InsertionLength : e.RemovalLength);
             OnTextChanged(new TextChangeEventArgs(_before, CurrentText, textChangeRange));
         }
