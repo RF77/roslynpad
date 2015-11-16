@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{3C9A0F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoslynPadLib", "RoslynPadLib\RoslynPadLib.csproj", "{103848EF-8127-4A69-B78B-88DBF0BC8334}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoslynPadHost", "RoslynPadHost\RoslynPadHost.csproj", "{D46C0C14-5633-4122-9380-028B3BC15D93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,10 @@ Global
 		{103848EF-8127-4A69-B78B-88DBF0BC8334}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{103848EF-8127-4A69-B78B-88DBF0BC8334}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{103848EF-8127-4A69-B78B-88DBF0BC8334}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D46C0C14-5633-4122-9380-028B3BC15D93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D46C0C14-5633-4122-9380-028B3BC15D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D46C0C14-5633-4122-9380-028B3BC15D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D46C0C14-5633-4122-9380-028B3BC15D93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
