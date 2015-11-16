@@ -173,4 +173,11 @@ namespace RoslynPad.Editor
             return new CompletionResult(completionData, overloadProvider);
         }
     }
+
+    class RoslynCodeEditorCompletionProviderImpl : RoslynCodeEditorCompletionProvider
+    {
+        public RoslynCodeEditorCompletionProviderImpl(InteractiveManager interactiveManager) : base(interactiveManager)
+        {
+        }
+    }
 }

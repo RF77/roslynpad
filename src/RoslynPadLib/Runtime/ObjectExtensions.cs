@@ -11,6 +11,6 @@ namespace RoslynPad.Runtime
             return o;
         }
 
-        internal static event Action<object> Dumped;
+        public static event Action<object> Dumped;
     }
 }

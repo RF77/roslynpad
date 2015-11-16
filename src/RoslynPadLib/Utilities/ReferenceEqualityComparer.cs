@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 namespace RoslynPad.Utilities
 {
-    internal class ReferenceEqualityComparer : IEqualityComparer<object>
+    public class ReferenceEqualityComparer : IEqualityComparer<object>
     {
         bool IEqualityComparer<object>.Equals(object x, object y)
         {
