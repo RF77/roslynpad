@@ -76,6 +76,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Roslyn\InteractiveManager.cs" />
     <Compile Include="Roslyn\InteractiveWorkspace.cs" />
+    <Compile Include="Roslyn\RoslynData.cs" />
     <Compile Include="Runtime\ObjectExtensions.cs" />
     <Compile Include="Utilities\ReferenceEqualityComparer.cs" />
   </ItemGroup>
